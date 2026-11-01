@@ -55,11 +55,6 @@ public class MethodsLabJava {
 
         System.out.println("Maximum: " + maxInArray(numbers));
 
-        // ADDITIONAL TASK: GCD
-        System.out.println("\nADDITIONAL TASK: GCD");
-
-        System.out.println("GCD: " + GCD(20, 15));
-
         input.close();
     }
 
@@ -160,25 +155,4 @@ public class MethodsLabJava {
         return max;
     }
 
-    // ADDITIONAL TASK: GCD
-
-    static int GCD(int a, int b) {
-
-        if (a <= 0 || b <= 0) {
-            throw new IllegalArgumentException(
-                "Both numbers must be positive integers."
-            );
-        }
-
-        int gcd = 1;
-
-        for (int i = 1; i <= a && i <= b; i++) {
-
-            if (a % i == 0 && b % i == 0) {
-                gcd = i;
-            }
-        }
-
-        return gcd;
     }
-}
